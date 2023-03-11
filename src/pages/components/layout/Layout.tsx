@@ -5,7 +5,7 @@ import NavbarRigth from "../navbar/NavbarRigth";
 
 const Layout = () => {
   return (
-    <main className="w-screen h-screen flex">
+    <main className=" h-screen flex">
       <div className="w-[70%] h-full">
         <NavbarLeft />
         <HerosectionLeft />
