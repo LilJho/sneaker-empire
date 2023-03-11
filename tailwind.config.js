@@ -9,6 +9,10 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      Playfair: ["Playfair Display", "serif"],
+      WorkSans: ["Work Sans", "sans-serif"],
+    },
     extend: {},
   },
   plugins: [],
