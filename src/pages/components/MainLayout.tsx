@@ -1,3 +1,4 @@
+import BannerSection from "./BannerSection";
 import Layout from "./layout/Layout";
 import PopularSection from "./PopularSection";
 
@@ -6,6 +7,7 @@ const MainLayout = () => {
     <>
       <Layout />
       <PopularSection />
+      <BannerSection />
     </>
   );
 };

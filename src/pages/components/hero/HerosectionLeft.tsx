@@ -13,6 +13,9 @@ const HerosectionLeft = () => {
           labore neque exercitationem autem alias animi ad quam eos culpa
           veritatis.
         </p>
+        <button className="p-4 bg-[#4B0082] font-Playfair text-white rounded-2xl mt-2">
+          Buy Now!
+        </button>
       </article>
     </section>
   );
