@@ -42,7 +42,7 @@ const BannerSection = () => {
           </div>
         </div>
       </section>
-      <section className="flex justify-center">
+      <section className="flex justify-center max-h-[63rem]">
         <div>
           <Image
             src={"/bgimage/bg2.jpg"}
