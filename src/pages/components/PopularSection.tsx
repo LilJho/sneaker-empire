@@ -4,8 +4,8 @@ const PopularSection = () => {
   return (
     <section className="flex justify-center flex-col mt-[8rem] items-center">
       <h4 className="text-6xl font-Playfair">Most Popular</h4>
-      <div className="mt-10 flex gap-5">
-        <figure className="text-center font-WorkSans font-bold">
+      <div className="flex gap-5 mt-10">
+        <figure className="font-bold text-center font-WorkSans">
           <Image
             src={"/popular/image1.jpg"}
             width={350}
@@ -15,7 +15,7 @@ const PopularSection = () => {
           />
           <figcaption>Black Shoes</figcaption>
         </figure>
-        <figure className="text-center font-WorkSans font-bold">
+        <figure className="font-bold text-center font-WorkSans">
           <Image
             src={"/popular/image2.jpg"}
             width={350}
@@ -25,7 +25,7 @@ const PopularSection = () => {
           />
           <figcaption>Running Shoes</figcaption>
         </figure>
-        <figure className="text-center font-WorkSans font-bold">
+        <figure className="font-bold text-center font-WorkSans">
           <Image
             src={"/popular/image3.jpg"}
             width={350}
