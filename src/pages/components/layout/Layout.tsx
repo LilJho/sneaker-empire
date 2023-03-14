@@ -6,11 +6,11 @@ import NavbarRigth from "../navbar/NavbarRigth";
 const Layout = () => {
   return (
     <main className="flex h-screen ">
-      <div className="w-[84rem] h-full ">
+      <div className="w-[70%] h-full">
         <NavbarLeft />
         <HerosectionLeft />
       </div>
-      <div className="bg-[#84BFE1] w-[36rem] h-full  ">
+      <div className="bg-[#84BFE1] w-[30%] h-full">
         <NavbarRigth />
         <HerosectionRight />
       </div>
