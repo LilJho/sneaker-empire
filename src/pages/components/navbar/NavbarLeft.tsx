@@ -14,7 +14,7 @@ const NavbarLeft = () => {
           />
         </div>
 
-        <ul className="font-Playfair text-2xl flex gap-[4rem] cursor-pointer mr-[15rem]">
+        <ul className=" text-2xl flex gap-[4rem] cursor-pointer mr-[15rem]">
           <li>Men</li>
           <li>Women</li>
           <li>Kids</li>
