@@ -2,13 +2,13 @@ import { MdOutlineCancel } from "react-icons/md";
 import { AiOutlineDelete } from "react-icons/ai";
 import Image from "next/image";
 
-const Cart = () => {
+const Cart = ({ closeModal }) => {
   return (
     <div className="flex items-center justify-center w-screen h-screen">
-      <section className="p-6 m-6 rounded-lg shadow-lg bg-opacity-20 backdrop-blur-lg">
+      <section className="p-6 m-6 bg-white rounded-lg">
         <div className="flex justify-between text-4xl">
           <h4>Cart</h4>
-          <MdOutlineCancel />
+          <MdOutlineCancel onClick={closeModal} className="cursor-pointer" />
         </div>
 
         <table className="mt-12 bg-gray-100 rounded-lg ">
