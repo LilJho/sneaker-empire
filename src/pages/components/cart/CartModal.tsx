@@ -3,7 +3,12 @@ import { Dialog, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import Cart from "./Cart";
 
-const CartModal = ({ isOpen, closeModal }) => {
+interface MyComponentProps {
+  isOpen: boolean;
+  closeModal: () => void;
+}
+
+const CartModal: React.FC<MyComponentProps> = ({ isOpen, closeModal }) => {
   return (
     <Transition appear show={isOpen} as={Fragment}>
       <Dialog as="div" className="absolute z-10" onClose={closeModal}>

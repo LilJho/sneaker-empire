@@ -2,7 +2,11 @@ import { MdOutlineCancel } from "react-icons/md";
 import { AiOutlineDelete } from "react-icons/ai";
 import Image from "next/image";
 
-const Cart = ({ closeModal }) => {
+interface MyComponentProps {
+  closeModal: () => void;
+}
+
+const Cart: React.FC<MyComponentProps> = ({ closeModal }) => {
   return (
     <div className="flex items-center justify-center ">
       <section className="p-6 m-6 bg-white rounded-lg">
