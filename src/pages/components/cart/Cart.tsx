@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Cart = ({ closeModal }) => {
   return (
-    <div className="flex items-center justify-center w-screen h-screen">
+    <div className="flex items-center justify-center ">
       <section className="p-6 m-6 bg-white rounded-lg">
         <div className="flex justify-between text-4xl">
           <h4>Cart</h4>

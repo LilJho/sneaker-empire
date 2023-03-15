@@ -8,7 +8,7 @@ const HerosectionRight = () => {
         width={600}
         height={600}
         alt="Hero Background Image"
-        className="absolute z-10 right-[5rem] shadow drop-shadow"
+        className="relative z-10 right-[5rem] shadow drop-shadow lg:right-[5rem]"
       />
     </article>
   );
