@@ -5,12 +5,12 @@ import NavbarRigth from "../navbar/NavbarRigth";
 
 const Layout = () => {
   return (
-    <main className="lg:flex lg:h-[59rem] lg:w-[120rem] w-[100rem] ">
+    <main className="w-full h-screen lg:flex ">
       <div className="lg:w-[70%] lg:h-full w-[100rem]">
         <NavbarLeft />
         <HerosectionLeft />
       </div>
-      <div className="bg-[#84BFE1] lg:w-[30%] h-full hidden lg:block">
+      <div className="bg-[#84BFE1] w-[30%] h-screen hidden lg:block">
         <NavbarRigth />
         <HerosectionRight />
       </div>

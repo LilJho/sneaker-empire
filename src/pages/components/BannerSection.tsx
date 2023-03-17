@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const BannerSection = () => {
   return (
-    <section className=" w-[100rem] lg:w-[120rem] ">
-      <section className="mt-[5rem] flex justify-center items-center min-h-[63.3rem] lg:min-h-0 lg:max-h-[53.25rem] ">
-        <div className="flex max-h-[49rem] min-h-[63.3rem] lg:min-h-0  lg:max-h-[84.38rem]">
+    <section className="w-full ">
+      <section className="mt-[5rem] flex justify-center items-center">
+        <div className="flex ">
           <div>
             <Image
               src={"/bgimage/sidebg/leftbg.svg"}
@@ -34,7 +34,7 @@ const BannerSection = () => {
             </div>
           </div>
 
-          <div className="relative lg:top-[45.2rem] hidden lg:block lg:max-h-[26.2rem]">
+          <div className="relative hidden lg:top-0 lg:block">
             <Image
               src={"/bgimage/sidebg/rightbg.svg"}
               width={150}
@@ -44,16 +44,15 @@ const BannerSection = () => {
           </div>
         </div>
       </section>
-      <section className="flex justify-center relative lg:max-h-[84rem] lg:top-[4.3rem] max-h-[66.9rem] ">
+      <section className="relative flex justify-center w-full ">
         <div>
           <Image
             src={"/bgimage/bg2.jpg"}
             width={1600}
             height={800}
             alt="Background Image Two"
-            className="w-[100rem] lg:w-[120rem] "
           />
-          <div className="max-w-[27rem] relative left-[60rem] bottom-[15rem] lg:left-[70rem] lg:bottom-[13rem]">
+          <div className="max-w-[27rem] relative left-[5rem] bottom-[15rem]">
             <h4 className="text-4xl font-bold text-white font-Playfair">
               Elevate your Performance
             </h4>
