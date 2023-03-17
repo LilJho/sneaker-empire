@@ -17,6 +17,7 @@ const PopularSection = () => {
             Black Shoes
           </figcaption>
         </figure>
+
         <figure className="font-bold text-center font-WorkSans sm:hidden lg:block">
           <Image
             src={"/popular/image2.jpg"}
@@ -27,6 +28,7 @@ const PopularSection = () => {
           />
           <figcaption>Running Shoes</figcaption>
         </figure>
+
         <figure className="font-bold text-center font-WorkSans sm:hidden lg:block">
           <Image
             src={"/popular/image3.jpg"}

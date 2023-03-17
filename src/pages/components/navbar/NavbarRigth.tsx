@@ -27,7 +27,11 @@ const NavbarRigth = () => {
         </div>
         <button className="font-Playfair">Login</button>
       </div>
-      <CartModal isOpen={isOpen} closeModal={closeModal} />
+      <CartModal
+        isOpen={isOpen}
+        closeModal={closeModal}
+        openModal={openModal}
+      />
     </nav>
   );
 };
