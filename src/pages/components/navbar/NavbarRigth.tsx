@@ -10,9 +10,9 @@ const NavbarRigth = () => {
     setIsOpen(false);
   }
 
-  function openModal() {
+  const openModal = () => {
     setIsOpen(true);
-  }
+  };
 
   return (
     <nav className="p-4">

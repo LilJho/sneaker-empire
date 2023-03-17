@@ -11,14 +11,14 @@ const NavbarLeft = () => {
             width={100}
             height={100}
             alt={"LOGO"}
-            className="cursor-pointer sm:w-[10rem] "
+            className="cursor-pointer w-[10rem] "
           />
         </div>
-        <div className="lg:hidden sm:block">
-          <GiHamburgerMenu className="sm:w-[5rem] sm:h-[5rem]" />
+        <div className="block lg:hidden">
+          <GiHamburgerMenu className="w-[5rem] h-[5rem]" />
         </div>
 
-        <ul className="font-Playfair lg:text-2xl lg:flex lg:gap-[4rem] cursor-pointer mr-[15rem] sm:hidden">
+        <ul className="font-Playfair text-2xl lg:flex lg:gap-[4rem] cursor-pointer mr-[15rem] hidden">
           <li>Men</li>
           <li>Women</li>
           <li>Kids</li>

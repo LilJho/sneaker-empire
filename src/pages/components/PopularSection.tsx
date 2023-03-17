@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const PopularSection = () => {
   return (
-    <section className="flex justify-center my-[8rem] flex-col items-center w-[100rem] 2xl:w-[120rem]">
-      <h4 className=" font-Playfair sm:text-[6rem]">Most Popular</h4>
+    <section className="flex justify-center my-[8rem] flex-col items-center w-[100rem] lg:w-[120rem]">
+      <h4 className=" font-Playfair text-[6rem]">Most Popular</h4>
       <div className="flex gap-5 mt-10">
         <figure className="font-bold text-center font-WorkSans">
           <Image
@@ -11,14 +11,14 @@ const PopularSection = () => {
             width={350}
             height={350}
             alt={"Popular Sneakers"}
-            className="lg:rounded-2xl lg:w-[22rem] lg:h-[14.5rem] sm:w-[60rem] sm:h-[30rem]"
+            className="rounded-[5rem] w-[60rem] h-[30rem]"
           />
-          <figcaption className="sm:text-[2rem] lg:text-base">
+          <figcaption className="text-[2rem] lg:text-base">
             Black Shoes
           </figcaption>
         </figure>
 
-        <figure className="font-bold text-center font-WorkSans sm:hidden lg:block">
+        <figure className="hidden font-bold text-center font-WorkSans lg:block">
           <Image
             src={"/popular/image2.jpg"}
             width={350}
@@ -29,7 +29,7 @@ const PopularSection = () => {
           <figcaption>Running Shoes</figcaption>
         </figure>
 
-        <figure className="font-bold text-center font-WorkSans sm:hidden lg:block">
+        <figure className="hidden font-bold text-center font-WorkSans lg:block">
           <Image
             src={"/popular/image3.jpg"}
             width={350}
