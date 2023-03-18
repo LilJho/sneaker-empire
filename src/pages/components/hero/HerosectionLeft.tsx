@@ -3,24 +3,24 @@ import React from "react";
 
 const HerosectionLeft = () => {
   return (
-    <section className="lg:w-full lg:h-[80%] flex justify-center items-center flex-col h-[100rem]">
+    <section className="w-full lg:h-[80%] flex justify-center items-center flex-col h-[50rem]">
       <div>
         <Image
           src={"/heroBG/mdshoe.png"}
-          width={800}
+          width={500}
           height={300}
           alt="Image of a shoe"
           className="rounded-[5rem] lg:hidden bg-sky-200"
         />
       </div>
-      <article className="lg:w-[35rem] w-[50rem] text-center">
-        <h2 className="lg:text-[8rem] font-Playfair font-bold leading-none text-[12rem]">
+      <article className="lg:w-[35rem] text-center">
+        <h2 className="lg:text-[8rem] font-Playfair font-bold leading-none text-[4rem]">
           Sneakers
         </h2>
-        <h4 className="lg:text-4xl font-WorkSans text-[4rem] mt-4">
+        <h4 className="lg:text-4xl font-WorkSans text-[2rem] mt-4">
           Designs that You will love
         </h4>
-        <p className="font-WorkSans lg:text-base text-[2rem] mt-4">
+        <p className="mt-4 text-base font-WorkSans lg:text-base">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
           labore neque exercitationem autem alias animi ad quam eos culpa
           veritatis.

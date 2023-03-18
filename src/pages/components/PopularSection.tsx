@@ -11,7 +11,7 @@ const PopularSection = () => {
             width={350}
             height={350}
             alt={"Popular Sneakers"}
-            className=" rounded-[5rem] w-[60rem] h-[30rem] "
+            className="rounded-2xl"
           />
           <figcaption className="text-[2rem] lg:text-base">
             Black Shoes
