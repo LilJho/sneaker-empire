@@ -2,13 +2,13 @@ import Image from "next/image";
 
 const BannerSection = () => {
   return (
-    <section className="w-full h-full">
-      <section className="mt-[5rem] flex justify-center items-center ">
-        <div className="flex lg:min-h-[41rem]">
+    <section className="lg:relative">
+      <section className=" flex justify-center items-center lg:relative lg:top-[9rem]">
+        <div className="flex ">
           <div>
             <Image
               src={"/bgimage/bg1.jpg"}
-              width={1300}
+              width={2000}
               height={800}
               alt="Background Image One"
             />
@@ -25,15 +25,15 @@ const BannerSection = () => {
           </div>
         </div>
       </section>
-      <section className="flex justify-center lg:min-h-[24rem]">
+      <section className="flex justify-center">
         <div>
           <Image
             src={"/bgimage/bg2.jpg"}
-            width={1300}
+            width={2000}
             height={800}
             alt="Background Image Two"
           />
-          <div className="max-w-[27rem] relative left-[5rem] bottom-[15rem] hidden lg:block">
+          <div className="max-w-[27rem] absolute left-[2rem] bottom-[2rem] hidden lg:block">
             <h4 className="text-4xl font-bold text-white font-Playfair">
               Elevate your Performance
             </h4>
