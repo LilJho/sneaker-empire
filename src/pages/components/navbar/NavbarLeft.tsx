@@ -11,7 +11,7 @@ const NavbarLeft = () => {
             width={100}
             height={100}
             alt={"LOGO"}
-            className="cursor-pointer w-[10rem] "
+            className="cursor-pointer"
           />
         </div>
         <div className="block lg:hidden">
