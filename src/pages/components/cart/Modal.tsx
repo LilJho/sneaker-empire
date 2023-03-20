@@ -1,14 +1,18 @@
 import React from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment } from "react";
-import Cart from "./Cart";
 
 interface MyComponentProps {
   isOpen: boolean;
   closeModal: () => void;
+  children: any;
 }
 
-const CartModal: React.FC<MyComponentProps> = ({ isOpen, closeModal }) => {
+const CartModal: React.FC<MyComponentProps> = ({
+  isOpen,
+  closeModal,
+  children,
+}) => {
   return (
     <Transition appear show={isOpen} as={Fragment}>
       <Dialog as="div" className="absolute z-10" onClose={closeModal}>
@@ -35,9 +39,7 @@ const CartModal: React.FC<MyComponentProps> = ({ isOpen, closeModal }) => {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Dialog.Panel>
-                <Cart closeModal={closeModal} />
-              </Dialog.Panel>
+              <Dialog.Panel>{children}</Dialog.Panel>
             </Transition.Child>
           </div>
         </div>

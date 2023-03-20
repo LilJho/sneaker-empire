@@ -1,18 +1,13 @@
 import { GoSearch } from "react-icons/go";
 import { GrCart } from "react-icons/gr";
 import { useState } from "react";
-import CartModal from "../cart/CartModal";
+import Modal from "../cart/Modal";
+import Cart from "../cart/Cart";
+import LoginPage from "../user/LoginPage";
 
 const NavbarRigth = () => {
-  let [isOpen, setIsOpen] = useState(false);
-
-  function closeModal() {
-    setIsOpen(false);
-  }
-
-  const openModal = () => {
-    setIsOpen(true);
-  };
+  let [isOpenCart, setIsOpenCart] = useState(false);
+  let [isOpenLogin, setIsOpenLogin] = useState(false);
 
   return (
     <nav className="p-4">
@@ -21,17 +16,26 @@ const NavbarRigth = () => {
           <button>
             <GoSearch />
           </button>
-          <button className="cursor-pointer" onClick={openModal}>
+          <button
+            className="cursor-pointer"
+            onClick={() => setIsOpenCart(true)}
+          >
             <GrCart />
           </button>
         </div>
-        <button className="font-Playfair">Login</button>
+        <button
+          className="cursor-pointer font-Playfair"
+          onClick={() => setIsOpenLogin(true)}
+        >
+          Login
+        </button>
       </div>
-      <CartModal
-        isOpen={isOpen}
-        closeModal={closeModal}
-        openModal={openModal}
-      />
+      <Modal isOpen={isOpenCart} closeModal={() => setIsOpenCart(false)}>
+        <Cart closeModal={() => setIsOpenCart(false)} />
+      </Modal>
+      <Modal isOpen={isOpenLogin} closeModal={() => setIsOpenLogin(false)}>
+        <LoginPage />
+      </Modal>
     </nav>
   );
 };
