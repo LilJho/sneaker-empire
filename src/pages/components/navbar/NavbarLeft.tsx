@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const NavbarLeft = () => {
@@ -19,8 +20,10 @@ const NavbarLeft = () => {
         </div>
 
         <ul className="font-Playfair text-2xl lg:flex lg:gap-[4rem] cursor-pointer mr-[15rem] hidden">
-          <li>Men</li>
-          <li>Women</li>
+          <li>All Products</li>
+          <li>
+            <Link href={"/NavLinkSection"}>Most Popular</Link>
+          </li>
           <li>Kids</li>
         </ul>
       </div>

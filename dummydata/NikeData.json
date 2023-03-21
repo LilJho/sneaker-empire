@@ -1,0 +1,152 @@
+[
+  {
+    "id": "3f634ae3-056e-4248-ae25-7844b186185d",
+    "name": "Nike SB Janoski + Alabaster and Chilli Red",
+    "price": 3895,
+    "images": "w_592",
+    "trending": false,
+    "unisex": true,
+    "color": "Purple",
+    "gender": "Female"
+  },
+  {
+    "id": "20965e6f-e967-4030-87b7-2cabeafb1087",
+    "name": "Nike SB Force 58",
+    "price": 8895,
+    "images": "https://static.nike.com/a/images/c_limit",
+    "trending": false,
+    "unisex": true,
+    "color": "Violet",
+    "gender": "Male"
+  },
+  {
+    "id": "08e88139-2406-4755-9a58-8510c5820ab1",
+    "name": "Nike SB x Air Jordan 4 Pine Green",
+    "price": 8095,
+    "images": "f_auto/f40855c9-b765-4feb-93fe-192b10906932/nike-sb-x-air-jordan-4-pine-green-dr5415-103-release-date.jpg",
+    "trending": false,
+    "unisex": false,
+    "color": "Purple",
+    "gender": "Female"
+  },
+  {
+    "id": "6db50f9d-6a01-444a-8602-d03a28142dfa",
+    "name": "Nike Dunk Low Retro SE",
+    "price": 6195,
+    "images": "https://static.nike.com/a/images/t_prod_ss/w_640",
+    "trending": true,
+    "unisex": true,
+    "color": "Pink",
+    "gender": "Male"
+  },
+  {
+    "id": "c25730c3-bb6a-46b8-9247-8345c7e7ebb0",
+    "name": "Nike Dunk Low Retro",
+    "price": 8395,
+    "images": "f_auto/t_product_v1/b652ddaf-5eee-4ae0-83a9-da5148274f33/dunk-low-retro-shoes-bCzchX.png",
+    "trending": true,
+    "unisex": true,
+    "color": "Turquoise",
+    "gender": "Female"
+  },
+  {
+    "id": "cf61d55b-a6f9-49d0-a233-f6d45b54adfe",
+    "name": "Nike SB Force 58",
+    "price": 8095,
+    "images": "w_592",
+    "trending": false,
+    "unisex": false,
+    "color": "Yellow",
+    "gender": "Female"
+  },
+  {
+    "id": "a80dbe36-62c2-4596-9293-3f4f7c167fb5",
+    "name": "Nike Zegama",
+    "price": 8095,
+    "images": "c_limit",
+    "trending": true,
+    "unisex": true,
+    "color": "Red",
+    "gender": "Male"
+  },
+  {
+    "id": "3b3de2ee-3cd2-42ef-bc24-758cb93b4667",
+    "name": "Nike Court Vision Low",
+    "price": 3695,
+    "images": "w_592",
+    "trending": false,
+    "unisex": true,
+    "color": "Indigo",
+    "gender": "Male"
+  },
+  {
+    "id": "eab45018-f7aa-4d31-bdb2-33c0969d41cf",
+    "name": "Air Max 1 Corduroy",
+    "price": 6195,
+    "images": "f_auto/t_product_v1/39887545-1b81-4cdd-bb14-8695fa2058fa/air-force-1-react-shoes-mm8pv3.png",
+    "trending": false,
+    "unisex": true,
+    "color": "Green",
+    "gender": "Female"
+  },
+  {
+    "id": "1436fca1-cf76-4fcd-a920-921e4d2f235c",
+    "name": "Nike SB Force 58",
+    "price": 5195,
+    "images": "w_592",
+    "trending": false,
+    "unisex": true,
+    "color": "Red",
+    "gender": "Male"
+  },
+  {
+    "id": "f01a89af-8fe3-44c8-b0be-86637003b6df",
+    "name": "Nike SB Force 58",
+    "price": 5195,
+    "images": "w_592",
+    "trending": false,
+    "unisex": true,
+    "color": "Violet",
+    "gender": "Female"
+  },
+  {
+    "id": "2de62415-36fa-477f-b0cb-cb5bdf244881",
+    "name": "Nike Zegama",
+    "price": 5495,
+    "images": "f_auto/a1bcca8b-14bf-407a-959a-02668110d4fc/women-s-air-max-1-87-great-indoors-fd0827-133-release-date.jpg",
+    "trending": true,
+    "unisex": true,
+    "color": "Orange",
+    "gender": "Female"
+  },
+  {
+    "id": "5c934f46-273a-40f0-88c0-efc9e95aaddf",
+    "name": "Nike Zegama",
+    "price": 3695,
+    "images": "w_592",
+    "trending": true,
+    "unisex": true,
+    "color": "Green",
+    "gender": "Male"
+  },
+  {
+    "id": "84f2154a-9340-439d-99ba-0da6b5d4ff8c",
+    "name": "Air Max 1 '86 Original Big Bubble",
+    "price": 3695,
+    "images": "f_auto/t_product_v1/784353e9-95cb-43f1-b8c3-e8a31b3c0bcb/court-vision-low-shoes-5S8pQ3.png",
+    "trending": true,
+    "unisex": true,
+    "color": "Turquoise",
+    "gender": "Female"
+  },
+  {
+    "id": "b03b4749-ef24-45eb-8af6-585cd3627967",
+    "name": "Nike Court Vision Low",
+    "price": 5195,
+    "images": "w_592",
+    "trending": false,
+    "unisex": true,
+    "color": "Goldenrod",
+    "gender": "Male"
+  }
+]
