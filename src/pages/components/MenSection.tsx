@@ -3,12 +3,11 @@ import React, { useEffect } from "react";
 import NavbarLeft from "./navbar/NavbarLeft";
 import NavbarRigth from "./navbar/NavbarRigth";
 import { BiDownArrow } from "react-icons/bi";
-import filadata from "../../../dummydata/FilaData.json";
-import nikedata from "../../../dummydata/NikeData.json";
 
-const MenSection = () => {
-  const allShoes = filadata;
-  console.log(allShoes);
+const MenSection = ({ shoesData }) => {
+  if (!shoesData) {
+    return <h1>Loading</h1>;
+  }
   return (
     <main>
       <div className="flex justify-between w-full">
@@ -28,7 +27,7 @@ const MenSection = () => {
           </div>
         </div>
         <div className="grid grid-cols-3 gap-4">
-          {allShoes.map((shoeData) => (
+          {shoesData.map((shoeData) => (
             <Post shoeData={shoeData} />
           ))}
         </div>
@@ -39,14 +38,14 @@ const MenSection = () => {
 
 const Post = ({ shoeData }) => {
   return (
-    <figure className="p-4 bg-gray-200 rounded-lg">
+    <figure className="p-4" key={shoeData.id}>
       <Image
         src={shoeData.images}
         width={300}
         height={300}
         alt="A shoe in the items list"
       />
-      <figcaption>
+      <figcaption className="text-center">
         <h4 className="text-base font-Playfair">{shoeData.name}</h4>
         <p className="text-sm text-gray-500 font-WorkSans">
           color: {shoeData.color}
