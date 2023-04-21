@@ -3,18 +3,13 @@ import HerosectionRight from "../hero/HerosectionRight";
 import NavbarLeft from "../navbar/NavbarLeft";
 import NavbarRigth from "../navbar/NavbarRigth";
 
-const Layout = () => {
+const Layout = ({ children }) => {
   return (
-    <main className="w-full h-full lg:flex ">
-      <div className="lg:w-[70%] lg:h-[54rem] w-full">
-        <NavbarLeft />
-        <HerosectionLeft />
-      </div>
-      <div className="bg-[#84BFE1] w-[30%] h-[54rem] hidden lg:block">
-        <NavbarRigth />
-        <HerosectionRight />
-      </div>
-    </main>
+    <div className="w-full">
+      <div className="fixed top-0 left-0 h-full bg-white w-[60%]"></div>
+      {children}
+      <div className="fixed top-0 right-0 h-full bg-[#84BFE1] w-[40%]"></div>
+    </div>
   );
 };
 

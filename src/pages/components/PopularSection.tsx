@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const PopularSection = () => {
   return (
-    <section className="flex justify-center my-[8rem] flex-col items-center w-full">
-      <h4 className=" font-Playfair text-[6rem]">Most Popular</h4>
-      <div className="flex gap-5 mt-10">
+    <section className="flex justify-center my-[8rem] flex-col items-center w-full ">
+      <h4 className=" font-Playfair text-[6rem] z-10">Most Popular</h4>
+      <div className="z-10 flex gap-5 mt-10">
         <figure className="font-bold text-center font-WorkSans">
           <Image
             src={"/popular/image1.jpg"}
@@ -29,7 +29,7 @@ const PopularSection = () => {
           <figcaption>Running Shoes</figcaption>
         </figure>
 
-        <figure className="hidden font-bold text-center font-WorkSans lg:block">
+        <figure className="hidden font-bold text-center font-WorkSans lg:block ">
           <Image
             src={"/popular/image3.jpg"}
             width={350}
