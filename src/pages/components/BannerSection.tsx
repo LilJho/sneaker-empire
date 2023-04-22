@@ -15,7 +15,7 @@ const BannerSection = () => {
           <p className="text-2xl font-semibold text-gray-800 font-Playfair">
             Gives value to your feet
           </p>
-          <button className="px-4 py-2 bg-[#4B0082] text-white font-WorkSans rounded">
+          <button className="px-4 py-2 text-xs bg-[#4B0082] text-white font-WorkSans rounded">
             Shop Now!
           </button>
         </figcaption>
@@ -32,7 +32,7 @@ const BannerSection = () => {
           <p className="text-2xl font-semibold text-gray-900 font-Playfair">
             Elevate your Performance
           </p>
-          <button className="px-4 py-2 bg-[#4B0082] text-white font-WorkSans rounded">
+          <button className="px-4 text-xs py-2 bg-[#4B0082] text-white font-WorkSans rounded">
             Shop Now!
           </button>
         </figcaption>

@@ -15,7 +15,7 @@ const Herosection = () => {
           obcaecati beatae dignissimos eos deleniti, ipsum repellat praesentium
           magnam consectetur.
         </p>
-        <button className="px-2 py-1 mt-4 text-white bg-[#4B0082] rounded shadow">
+        <button className="px-2 text-xs py-1 mt-4 text-white bg-[#4B0082] rounded shadow">
           Buy now!
         </button>
       </section>
