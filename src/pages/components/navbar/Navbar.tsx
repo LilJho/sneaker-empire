@@ -7,13 +7,13 @@ import { GrCart } from "react-icons/gr";
 const Navbar = () => {
   return (
     <nav className="flex justify-between w-full p-4 text-sm">
-      <ul className="z-10 flex bg-transparent gap-14">
+      <ul className="z-10 flex items-center justify-center bg-transparent gap-14">
         <li>
           <Link href={"/"}>
             <Image
               src={"/logo.svg"}
-              width={50}
-              height={50}
+              width={75}
+              height={75}
               alt={"LOGO"}
               className="z-10 cursor-pointer"
             />
@@ -29,7 +29,7 @@ const Navbar = () => {
           <Link href={"/"}>World Balance</Link>
         </li>
       </ul>
-      <ul className="z-10 flex gap-10 bg-transparent">
+      <ul className="z-10 flex items-center justify-center gap-10 bg-transparent">
         <li>
           <button>
             <GoSearch />
@@ -41,7 +41,7 @@ const Navbar = () => {
           </button>
         </li>
         <li>
-          <button className="px-2 text-white bg-[#4B0082] rounded shadow">
+          <button className="px-2 py-1  text-white bg-[#4B0082] rounded shadow">
             Login
           </button>
         </li>

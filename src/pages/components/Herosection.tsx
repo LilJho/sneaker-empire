@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Herosection = () => {
   return (
-    <main className="flex w-full h-[80vh] justify-center items-center gap-8">
+    <main className="flex w-full h-[100vh] justify-center items-center gap-8">
       <section className="z-10 max-w-[20rem]">
         <h1 className="text-4xl font-semibold font-Playfair">Sneaker Empire</h1>
         <p className="text-lg text-gray-700 font-WorkSans">
@@ -15,7 +15,7 @@ const Herosection = () => {
           obcaecati beatae dignissimos eos deleniti, ipsum repellat praesentium
           magnam consectetur.
         </p>
-        <button className="px-2 mt-4 text-white bg-[#4B0082] border-blue-500 rounded shadow">
+        <button className="px-2 py-1 mt-4 text-white bg-[#4B0082] rounded shadow">
           Buy now!
         </button>
       </section>
