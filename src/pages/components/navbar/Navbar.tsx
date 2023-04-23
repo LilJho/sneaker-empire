@@ -25,13 +25,13 @@ const Navbar = ({ setOpenLogin, openLogin }: Props) => {
           </Link>
         </li>
         <li>
-          <Link href={"/"}>All Products</Link>
+          <Link href={`/products?data=${"allProducts"}`}>All Products</Link>
         </li>
         <li>
-          <Link href={"/"}>Fila Sneakers</Link>
+          <Link href={`/products?data=${"filaSneakers"}`}>Fila Sneakers</Link>
         </li>
         <li>
-          <Link href={"/"}>World Balance</Link>
+          <Link href={`/products?data=${"worldBalance"}`}>World Balance</Link>
         </li>
       </ul>
       <ul className="z-10 flex items-center justify-center gap-10 bg-transparent">
