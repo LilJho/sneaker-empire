@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { GoSearch } from "react-icons/go";
 import { GrCart } from "react-icons/gr";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 type Props = {
   openLogin: boolean;
@@ -36,9 +36,11 @@ const Navbar = ({ setOpenLogin, openLogin }: Props) => {
       </ul>
       <ul className="z-10 flex items-center justify-center gap-10 bg-transparent">
         <li>
-          <button>
-            <GoSearch />
-          </button>
+          <input
+            type="text"
+            placeholder={"Search..."}
+            className="p-2 rounded bg-opacity-5"
+          />
         </li>
         <li>
           <button>
