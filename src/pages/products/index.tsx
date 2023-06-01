@@ -22,17 +22,14 @@ interface shoesProps {
 
 const index = () => {
   const [openLogin, setOpenLogin] = useState(false);
-  const [shoesData, setShoesData] = useState<shoesProps[]>([]);
+  const [shoesData, setShoesData] = useState<shoesProps[]>();
 
   const router = useRouter();
-  const data = router.query.data;
-  if (!data) {
-    return <span>Loading</span>;
-  }
+  const { data } = router.query;
 
-  useEffect(() => {
-    const allshoes: shoesProps[] = FilaShoes.concat(NewBalanceShoes);
-    allshoes.sort((a, b) => a.name.localeCompare(b.name));
+  const allshoes: shoesProps[] = [...FilaShoes, ...NewBalanceShoes];
+  allshoes.sort((a, b) => a.name.localeCompare(b.name));
+  const getData = (data: string | string[]) => {
     switch (data) {
       case "allProducts":
         setShoesData(allshoes);
@@ -47,6 +44,13 @@ const index = () => {
         setShoesData([]);
         break;
     }
+  };
+
+  useEffect(() => {
+    if (!data) {
+      return;
+    }
+    getData(data);
   }, [data]);
 
   if (!shoesData) {
@@ -64,7 +68,7 @@ const index = () => {
               <BiDownArrow />
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-3 gap-4 bg-gray-500">
             {shoesData.map((shoeData) => (
               <Post shoeData={shoeData} />
             ))}
