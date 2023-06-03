@@ -4,6 +4,9 @@ import Image from "next/image";
 import { GrCart } from "react-icons/gr";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useSelector } from "react-redux";
+import useToggle from "../../../../hooks/useToggle";
+import Modal from "../cart/Modal";
+import Cart from "../cart/Cart";
 
 type Props = {
   openLogin: boolean;
@@ -22,8 +25,12 @@ interface shoesProps {
 }
 
 const Navbar = ({ setOpenLogin, openLogin }: Props) => {
-  const cartItems = useSelector((state: { cart: shoesProps[] }) => state);
-  console.log(cartItems);
+  // Get the cartItems in a globalize state
+  const cartItems = useSelector((state: { cart: shoesProps[] }) => state.cart);
+
+  // toggle the cart
+  const [showCart, toggleCart] = useToggle();
+
   return (
     <nav className="flex justify-between w-full p-4 text-sm">
       <ul className="z-10 flex items-center justify-center bg-transparent gap-14">
@@ -57,10 +64,10 @@ const Navbar = ({ setOpenLogin, openLogin }: Props) => {
           />
         </li>
         <li>
-          <button>
+          <button onClick={toggleCart}>
             <div className="relative w-5 h-5">
               <span className="absolute top-[-15px] right-[-15px] px-1 py-0.2 text-[10px] text-white bg-blue-600 rounded-full">
-                {cartItems.cart.length}
+                {cartItems.length}
               </span>
               <GrCart className="w-5 h-5" />
             </div>
@@ -75,6 +82,11 @@ const Navbar = ({ setOpenLogin, openLogin }: Props) => {
           </button>
         </li>
       </ul>
+      {showCart && (
+        <Modal isOpen={showCart} closeModal={toggleCart}>
+          <Cart closeModal={toggleCart} />
+        </Modal>
+      )}
     </nav>
   );
 };

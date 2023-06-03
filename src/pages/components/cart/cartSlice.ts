@@ -21,7 +21,10 @@ export const cartSlice = createSlice({
       state.push(action.payload);
     },
     removeToCart: (state, action: PayloadAction<string>) => {
-      state = state.filter((shoe) => shoe.id !== action.payload);
+      const index = state.findIndex((shoe) => shoe.id === action.payload);
+      if (index !== -1) {
+        state.splice(index, 1);
+      }
     },
   },
 });

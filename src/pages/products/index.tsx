@@ -9,8 +9,8 @@ import Navbar from "../components/navbar/Navbar";
 import Modal from "../components/cart/Modal";
 import LoginPage from "../components/user/LoginPage";
 import Footer from "../components/Footer";
-import { useSelector, useDispatch } from "react-redux";
-import { addToCart, removeToCart } from "../components/cart/cartSlice";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../components/cart/cartSlice";
 
 interface shoesProps {
   id: string;
