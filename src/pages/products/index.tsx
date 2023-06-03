@@ -94,8 +94,6 @@ interface shoeDataProp {
 }
 
 const Post = ({ shoeData }: shoeDataProp) => {
-  const cart = useSelector((state: shoeDataProp[]) => state);
-  console.log(cart);
   const dispatch = useDispatch();
   return (
     <figure className="p-4" key={shoeData.id}>

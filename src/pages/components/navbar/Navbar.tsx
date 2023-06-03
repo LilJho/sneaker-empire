@@ -1,15 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { GrCart } from "react-icons/gr";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { useSelector } from "react-redux";
 
 type Props = {
   openLogin: boolean;
   setOpenLogin: (openLogin: boolean) => void;
 };
 
+interface shoesProps {
+  id: string;
+  name: string;
+  price: number;
+  images: string;
+  trending: boolean;
+  unisex: boolean;
+  color: string;
+  gender: string;
+}
+
 const Navbar = ({ setOpenLogin, openLogin }: Props) => {
+  const cartItems = useSelector((state: { cart: shoesProps[] }) => state);
+  console.log(cartItems);
   return (
     <nav className="flex justify-between w-full p-4 text-sm">
       <ul className="z-10 flex items-center justify-center bg-transparent gap-14">
@@ -44,7 +58,12 @@ const Navbar = ({ setOpenLogin, openLogin }: Props) => {
         </li>
         <li>
           <button>
-            <GrCart />
+            <div className="relative w-5 h-5">
+              <span className="absolute top-[-15px] right-[-15px] px-1 py-0.2 text-[10px] text-white bg-blue-600 rounded-full">
+                {cartItems.cart.length}
+              </span>
+              <GrCart className="w-5 h-5" />
+            </div>
           </button>
         </li>
         <li>
