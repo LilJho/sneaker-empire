@@ -4,13 +4,13 @@ import Image from "next/image";
 import FilaShoes from "../../../dummydata/FilaData.json";
 import NewBalanceShoes from "../../../dummydata/NewBalance.json";
 import { useRouter } from "next/router";
-import Layout from "../components/layout/Layout";
-import Navbar from "../components/navbar/Navbar";
-import Modal from "../components/cart/Modal";
-import LoginPage from "../components/user/LoginPage";
-import Footer from "../components/Footer";
+import Layout from "../../components/layout/Layout";
+import Navbar from "../../components/navbar/Navbar";
+import Modal from "../../components/cart/Modal";
+import LoginPage from "../../components/user/LoginPage";
+import Footer from "../../components/Footer";
 import { useDispatch } from "react-redux";
-import { addToCart } from "../components/cart/cartSlice";
+import { addToCart } from "../../components/cart/cartSlice";
 
 interface shoesProps {
   id: string;

@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { GrCart } from "react-icons/gr";
-import { GiHamburgerMenu } from "react-icons/gi";
+
 import { useSelector } from "react-redux";
-import useToggle from "../../../../hooks/useToggle";
+import useToggle from "../../../hooks/useToggle";
 import Modal from "../cart/Modal";
 import Cart from "../cart/Cart";
 

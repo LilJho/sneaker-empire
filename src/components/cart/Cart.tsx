@@ -16,14 +16,14 @@ const Cart: React.FC<MyComponentProps> = ({ closeModal }) => {
 
   return (
     <div className="flex items-center justify-center ">
-      <section className="p-6 m-6 bg-white rounded-lg">
+      <section className="p-6 m-6 bg-white rounded-lg min-h-[500px] min-w-[1100px]">
         <div className="flex justify-between text-4xl">
           <h4>Cart</h4>
           <MdOutlineCancel onClick={closeModal} className="cursor-pointer" />
         </div>
 
-        <table className="mt-12 bg-gray-100 rounded-lg ">
-          <thead className="border-b border-gray-500">
+        <table className="w-full mt-12 bg-gray-100 rounded-lg">
+          <thead className="border-b border-gray-500 ">
             <tr className="text-left font-Playfair">
               <th className="flex items-center gap-2 p-4">
                 <input type="checkbox" />
