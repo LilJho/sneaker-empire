@@ -15,6 +15,8 @@ import {
   TableCell,
   TableCaption,
 } from "../ui/table";
+import { DataTable } from "../table/DataTable";
+import { columns } from "../table/Columns";
 
 interface MyComponentProps {
   closeModal: () => void;
@@ -32,7 +34,9 @@ const Cart: React.FC<MyComponentProps> = ({ closeModal }) => {
           <MdOutlineCancel onClick={closeModal} className="cursor-pointer" />
         </div>
 
-        <Table>
+        <DataTable columns={columns} data={cartItems} />
+
+        {/* <Table>
           <TableHeader>
             <TableRow className="flex items-center justify-between w-full">
               <TableHead>
@@ -47,11 +51,15 @@ const Cart: React.FC<MyComponentProps> = ({ closeModal }) => {
             </TableRow>
           </TableHeader>
           <TableBody>
-            {cartItems.map((cartItem: stateType) => (
-              <OrderCard cartItem={cartItem} />
-            ))}
+            {cartItems.length > 0 ? (
+              cartItems.map((cartItem: stateType) => (
+                <OrderCard cartItem={cartItem} />
+              ))
+            ) : (
+              <div className="mt-24 text-lg font-bold">EMPTY</div>
+            )}
           </TableBody>
-        </Table>
+        </Table> */}
 
         {/* <table className="w-full mt-12 bg-gray-100 rounded-lg">
           <thead className="border-b border-gray-500 ">
